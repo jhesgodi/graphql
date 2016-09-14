@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "babel"
+  ],
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "experimentalObjectRestSpread": true,
+    "modules": true
+  },
+  "rules": {
+    "babel/generator-star-spacing": 1,
+    "comma-dangle": ["error", "never"],
+    "func-names": [0],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+    "prefer-arrow-callback": [0],
+    "space-before-function-paren": [2, "never"],
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "semi": [0]
+  }
+}
